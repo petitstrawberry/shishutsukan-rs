@@ -1,1 +1,1 @@
-# shishutukan-rs
+# shishutsukan-rs
