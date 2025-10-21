@@ -1,4 +1,4 @@
-use shishutukan::{Expense, Genre, ShishutsukanClient};
+use shishutsukan::{Expense, Genre, ShishutsukanClient};
 
 #[test]
 fn test_client_instantiation() {

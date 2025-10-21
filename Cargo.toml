@@ -1,11 +1,11 @@
 [package]
-name = "shishutukan"
+name = "shishutsukan"
 version = "0.1.0"
 edition = "2021"
 authors = ["petitstrawberry"]
 license = "MIT"
 description = "Rust client library for Shishutsukan expense management API"
-repository = "https://github.com/petitstrawberry/shishutukan-rs"
+repository = "https://github.com/petitstrawberry/shishutsukan-rs"
 keywords = ["api", "client", "expense", "management"]
 categories = ["api-bindings", "web-programming::http-client"]
 

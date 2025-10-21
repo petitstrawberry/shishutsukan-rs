@@ -1,6 +1,6 @@
-# shishutukan-rs
+# shishutsukan-rs
 
-**shishutukan-rs**は、[sfujibijutsukan/shishutsukan](https://github.com/sfujibijutsukan/shishutsukan) の支出管理WebアプリケーションのAPIクライアントライブラリです（Rust版）。
+**shishutsukan-rs**は、[sfujibijutsukan/shishutsukan](https://github.com/sfujibijutsukan/shishutsukan) の支出管理WebアプリケーションのAPIクライアントライブラリです（Rust版）。
 
 ## 特徴
 
@@ -16,7 +16,7 @@
 
 ```toml
 [dependencies]
-shishutukan = "0.1"
+shishutsukan = "0.1"
 tokio = { version = "1", features = ["full"] }
 ```
 
@@ -25,7 +25,7 @@ tokio = { version = "1", features = ["full"] }
 ### 基本的な初期化
 
 ```rust
-use shishutukan::ShishutsukanClient;
+use shishutsukan::ShishutsukanClient;
 
 let client = ShishutsukanClient::new("http://localhost:8000");
 ```
@@ -35,7 +35,7 @@ let client = ShishutsukanClient::new("http://localhost:8000");
 #### 支出データの追加
 
 ```rust
-use shishutukan::{ShishutsukanClient, Expense};
+use shishutsukan::{ShishutsukanClient, Expense};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -50,7 +50,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### 支出データの取得
 
 ```rust
-use shishutukan::ShishutsukanClient;
+use shishutsukan::ShishutsukanClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -66,7 +66,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### 支出データの削除
 
 ```rust
-use shishutukan::ShishutsukanClient;
+use shishutsukan::ShishutsukanClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -83,7 +83,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### ジャンル一覧の取得
 
 ```rust
-use shishutukan::ShishutsukanClient;
+use shishutsukan::ShishutsukanClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -99,7 +99,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### ジャンルの追加
 
 ```rust
-use shishutukan::{ShishutsukanClient, Genre};
+use shishutsukan::{ShishutsukanClient, Genre};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -114,7 +114,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #### ジャンルの削除
 
 ```rust
-use shishutukan::ShishutsukanClient;
+use shishutsukan::ShishutsukanClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -129,7 +129,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 ### エラーハンドリング
 
 ```rust
-use shishutukan::{ShishutsukanClient, ShishutsukanError};
+use shishutsukan::{ShishutsukanClient, ShishutsukanError};
 
 #[tokio::main]
 async fn main() {
@@ -222,7 +222,7 @@ pub struct ApiMessage {
 
 ### アーキテクチャ
 
-shishutukan-rsは以下の設計原則に従っています：
+shishutsukan-rsは以下の設計原則に従っています：
 
 1. **最小限の依存関係**: 必要最小限のクレート（reqwest、serde、tokio）のみを使用
 2. **型安全**: すべてのAPIレスポンスを適切な型にマッピング
@@ -272,4 +272,4 @@ Copyright (c) 2025 petitstrawberry
 
 ## 貢献
 
-バグ報告や機能要望は [Issues](https://github.com/petitstrawberry/shishutukan-rs/issues) からお願いします。
+バグ報告や機能要望は [Issues](https://github.com/petitstrawberry/shishutsukan-rs/issues) からお願いします。
