@@ -19,7 +19,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```
-    /// use shishutukan::ShishutsukanClient;
+    /// use shishutsukan::ShishutsukanClient;
     ///
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// ```
@@ -54,7 +54,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::{ShishutsukanClient, Expense};
+    /// # use shishutsukan::{ShishutsukanClient, Expense};
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let expense = Expense::new("2025-01-15".to_string(), "食費".to_string(), 1000);
@@ -82,7 +82,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::ShishutsukanClient;
+    /// # use shishutsukan::ShishutsukanClient;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let expenses = client.get_expenses().await?;
@@ -112,7 +112,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::ShishutsukanClient;
+    /// # use shishutsukan::ShishutsukanClient;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let result = client.delete_expense(1).await?;
@@ -141,7 +141,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::ShishutsukanClient;
+    /// # use shishutsukan::ShishutsukanClient;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let genres = client.get_genres().await?;
@@ -171,7 +171,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::{ShishutsukanClient, Genre};
+    /// # use shishutsukan::{ShishutsukanClient, Genre};
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let genre = Genre::new("娯楽費".to_string());
@@ -203,7 +203,7 @@ impl ShishutsukanClient {
     /// # Examples
     ///
     /// ```no_run
-    /// # use shishutukan::ShishutsukanClient;
+    /// # use shishutsukan::ShishutsukanClient;
     /// # async fn example() -> Result<(), Box<dyn std::error::Error>> {
     /// let client = ShishutsukanClient::new("http://localhost:8000");
     /// let result = client.delete_genre(7).await?;

@@ -1,6 +1,6 @@
-//! # Shishutukan - 支出管理APIクライアント
+//! # Shishutsukan - 支出管理APIクライアント
 //!
-//! **Shishutukan**は、[sfujibijutsukan/shishutsukan](https://github.com/sfujibijutsukan/shishutsukan)
+//! **Shishutsukan**は、[sfujibijutsukan/shishutsukan](https://github.com/sfujibijutsukan/shishutsukan)
 //! の支出管理WebアプリケーションのAPIクライアントライブラリです。
 //!
 //! ## 特徴
@@ -16,7 +16,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! shishutukan = "0.1"
+//! shishutsukan = "0.1"
 //! tokio = { version = "1", features = ["full"] }
 //! ```
 //!
@@ -25,7 +25,7 @@
 //! ### 基本的な初期化
 //!
 //! ```rust
-//! use shishutukan::ShishutsukanClient;
+//! use shishutsukan::ShishutsukanClient;
 //!
 //! let client = ShishutsukanClient::new("http://localhost:8000");
 //! ```
@@ -33,7 +33,7 @@
 //! ### 支出データの操作
 //!
 //! ```no_run
-//! use shishutukan::{ShishutsukanClient, Expense};
+//! use shishutsukan::{ShishutsukanClient, Expense};
 //!
 //! # async fn example() -> Result<(), Box<dyn std::error::Error>> {
 //! let client = ShishutsukanClient::new("http://localhost:8000");
@@ -57,7 +57,7 @@
 //! ### ジャンルの操作
 //!
 //! ```no_run
-//! use shishutukan::{ShishutsukanClient, Genre};
+//! use shishutsukan::{ShishutsukanClient, Genre};
 //!
 //! # async fn example() -> Result<(), Box<dyn std::error::Error>> {
 //! let client = ShishutsukanClient::new("http://localhost:8000");

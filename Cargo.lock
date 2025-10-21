@@ -938,7 +938,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "shishutukan"
+name = "shishutsukan"
 version = "0.1.0"
 dependencies = [
  "reqwest",
